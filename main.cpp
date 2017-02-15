@@ -25,5 +25,16 @@ int main()
         cout << "Hourly pay rate for this employee: $";
         cin >> payRate[index];
     }
+    // Display each employee's gross pay
+    cout << "\nHere is the gross pay for each employee:\n";
+    cout << fixed << showpoint << setprecision(2);
 
+    for (int index = 0; index < NUM_EMPS index++)
+    {
+        grossPay = hours[index] * payRate[index];
+        cout << "Employee #" << (index + 1);
+        cout << ": $" << setw(7) << grossPay << endl;
+    }
+
+    return 0;
 }
